@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #121214;
+  color: #e1e1e2;
+  background-image: url("../../background-image.png");
+  background-blend-mode: hard-light;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: 'Fira Code', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
