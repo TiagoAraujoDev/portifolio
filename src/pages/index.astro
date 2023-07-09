@@ -4,37 +4,42 @@ import LogoCarousel from "../components/Welcome/LogoCarousel.astro";
 ---
 
 <Layout title="Home">
-	<main class="container">
-	  <div class="hero_container">
-		  <h1 class="pitch">Hello, my name is <span class="name">Tiago Araujo</span></h1>
+  <main class="container">
+    <div class="hero_container">
+      <h1 class="pitch">
+        Hello, my name is <span class="name">Tiago Araujo</span>
+      </h1>
       <LogoCarousel />
-	  </div>
-	</main>
+    </div>
+  </main>
 </Layout>
 
 <style lang:"scss">
   .container {
-  	margin: 10rem auto 5rem;
-  	max-width: 128rem;
+    margin: 10rem auto 5rem;
+    max-width: 128rem;
   }
 
   .hero_container {
-  	display: flex;
-  	align-items: center;
-  	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  	& > .pitch {
-  	  width: 60rem;
-  	  font-size: 8rem;
+    & > .pitch {
+      width: 60rem;
+      font-size: 8rem;
       color: #e1e1e2;
     }
   }
 
   .name {
-    background: linear-gradient(90deg, rgba(121,9,102,1) 0%, rgba(54,58,102,1) 51%, rgba(244,0,255,1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(121, 9, 102, 1) 0%,
+      rgba(54, 58, 102, 1) 51%,
+      rgba(244, 0, 255, 1) 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
-  
 </style>
