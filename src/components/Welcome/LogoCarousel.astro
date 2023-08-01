@@ -2,113 +2,113 @@
 import Icon from "astro-icon";
 
 const logos = [
-	"logos:react",
-	"logos:astro",
-	"logos:nodejs-icon",
-	"logos:typescript-icon",
-	"logos:angular-icon",
-	"logos:express",
-	"logos:tailwindcss-icon",
-	"logos:nextjs",
-	"logos:sass",
-	"logos:lua",
-	"logos:java",
-	"logos:postgresql",
-	"logos:react",
-	"logos:astro",
-	"logos:nodejs-icon",
-	"logos:typescript-icon",
-	"logos:angular-icon",
-	"logos:express",
-	"logos:tailwindcss-icon",
-	"logos:nextjs",
-	"logos:sass",
-	"logos:lua",
-	"logos:java",
-	"logos:postgresql",
+  "logos:react",
+  "logos:astro",
+  "logos:nodejs-icon",
+  "logos:typescript-icon",
+  "logos:angular-icon",
+  "logos:express",
+  "logos:tailwindcss-icon",
+  "logos:nextjs",
+  "logos:sass",
+  "logos:lua",
+  "logos:java",
+  "logos:postgresql",
+  "logos:react",
+  "logos:astro",
+  "logos:nodejs-icon",
+  "logos:typescript-icon",
+  "logos:angular-icon",
+  "logos:express",
+  "logos:tailwindcss-icon",
+  "logos:nextjs",
+  "logos:sass",
+  "logos:lua",
+  "logos:java",
+  "logos:postgresql",
 ];
 ---
 
 <div class="slider">
-	<div class="slide-track">
-		{
-			logos.map((logo) => {
-				return (
-					<div class="slide">
-						<Icon name={logo} class="logos" />
-					</div>
-				);
-			})
-		}
-	</div>
+  <div class="slide-track">
+    {
+      logos.map((logo) => {
+        return (
+          <div class="slide">
+            <Icon name={logo} class="logos" />
+          </div>
+        );
+      })
+    }
+  </div>
 </div>
 
 <style>
-	@keyframes scroll {
-		0% {
-			transform: translateX(0);
-		}
-		100% {
-			transform: translateX(calc(-19rem * 12));
-		}
-	}
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-19rem * 12));
+    }
+  }
 
-	.slider {
-		background: black;
-		height: 19rem;
-		margin: auto;
-		overflow: hidden;
-		position: relative;
-		width: 80rem;
+  .slider {
+    background: black;
+    height: 19rem;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80rem;
 
-		&::before,
-		&::after {
-			background: linear-gradient(
-				to right,
-				rgba(0, 0, 0, 1) 0%,
-				rgba(0, 0, 0, 0) 100%
-			);
-			content: "";
-			height: 6.4rem;
-			position: absolute;
-			width: 200px;
-			height: 17rem;
-			z-index: 2;
-		}
+    &::before,
+    &::after {
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      content: "";
+      height: 6.4rem;
+      position: absolute;
+      width: 200px;
+      height: 17rem;
+      z-index: 2;
+    }
 
-		&::after {
-			right: 0;
-			top: 0;
-			transform: rotateZ(180deg);
-		}
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
 
-		&::before {
-			left: 0;
-			top: 0;
-		}
+    &::before {
+      left: 0;
+      top: 0;
+    }
 
-		.slide-track {
-			animation: scroll 40s linear infinite;
-			display: flex;
-			width: calc(19rem * 12);
-		}
+    .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(19rem * 12);
+    }
 
-		.slide {
-			height: 17rem;
-			width: 17rem;
-			margin-left: 2rem;
-			margin-right: 2rem;
-			background-color: white;
-			border-radius: 99999px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+    .slide {
+      height: 17rem;
+      width: 17rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      background-color: white;
+      border-radius: 99999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-			& > .logos {
-				width: 15rem;
-				height: 15rem;
-				padding: 2rem;
-			}
-		}
-	}
+      & > .logos {
+        width: 15rem;
+        height: 15rem;
+        padding: 2rem;
+      }
+    }
+  }
 </style>
